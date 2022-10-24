@@ -21,6 +21,7 @@ public final class LinkedList<T extends Comparable<T>> extends List<T> implement
      * 
      * @return {@code T} : Top value of the Stack.
      */
+    @Override
     public final T Pop()
     {
         return RemoveLast();
@@ -33,6 +34,7 @@ public final class LinkedList<T extends Comparable<T>> extends List<T> implement
      * 
      * @param value : Value to push onto the Stack.
      */
+    @Override
     public final void Push(T value)
     {
         AddLast(value);
@@ -45,6 +47,7 @@ public final class LinkedList<T extends Comparable<T>> extends List<T> implement
      * 
      * @return {@code T} : Top value of the Stack.
      */
+    @Override
     public final T Peek()
     {
         return GetLast();
@@ -61,6 +64,7 @@ public final class LinkedList<T extends Comparable<T>> extends List<T> implement
      * 
      * @param value : Value to add to the Queue.
      */
+    @Override
     public final void Enqueue(T value)
     {
         AddLast(value);
@@ -75,6 +79,7 @@ public final class LinkedList<T extends Comparable<T>> extends List<T> implement
      * @return {@code T} : Value at the end of the 
      * Queue.
      */
+    @Override
     public final T Dequeue()
     {
         return RemoveFirst();
@@ -88,6 +93,7 @@ public final class LinkedList<T extends Comparable<T>> extends List<T> implement
      * @return {@code T} : Value at the beginning of 
      * the Queue.
      */
+    @Override
     public final T First()
     {
         return GetFirst();

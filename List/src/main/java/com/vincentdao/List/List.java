@@ -7,9 +7,8 @@ import java.util.NoSuchElementException;
 /**
  * <p>
  * Abstract class {@code List} that holds all basic functions 
- * of a List. This is also applicable for its family, 
- * such as SinglyLinkedList, DoublyLinkedList, etc...
- * </p>
+ * of a List.This is also applicable for its family, 
+ such as SinglyLinkedList, DoublyLinkedList, etc...</p>
  * 
  * <p>
  * This abstract class can also be used for other ADT as 
@@ -64,7 +63,7 @@ public abstract class List<T extends Comparable<T>>
          * @return {@code int} : a negative number, 0 or 
          * positive number depends on whether the value of 
          * the first {@code Node} is lesser, equaled or 
-         * larger than the value of the sencond {@code Node}, 
+         * larger than the value of the second {@code Node}, 
          * respectively.
          */
         int CompareTo(Node nodeToCompare)
@@ -692,7 +691,7 @@ public abstract class List<T extends Comparable<T>>
      * 
      * @param high : Top index of the (sub)list
      */
-    private final void QuickSort(int low, int high)
+    private void QuickSort(int low, int high)
     {
         if (low < high)
         {
@@ -716,7 +715,7 @@ public abstract class List<T extends Comparable<T>>
      * 
      * @return {@code int} : Index of the {@code pivot}
      */
-    private final int Divide(int low, int high)
+    private int Divide(int low, int high)
     {
         // pivot is the value at right most
         Node pivot = GetNodeAt(high);
