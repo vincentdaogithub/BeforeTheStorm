@@ -1,3 +1,3 @@
 # BeforeTheStorm
 
-My attempt at making Collections in Java. Currently has (Linked) List implementation + Stack, Queue.
+Implementation of List data structure, using references from the Java Collection library.
